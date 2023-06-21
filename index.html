@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalie sua mentoria</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="./img/img.svg" alt="balao com estrela de nota dentro">
+      <h2>Informações pessoais</h2>
+    </header>
+    <form>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <div class="completename">
+            <div class="input-wrapper">
+              <label for="yourname">nome</label>
+              <input type="text" id="yourname">
+            </div>
+            <div class="input-wrapper">
+              <label for="yourlastname">sobrenome</label>
+              <input type="text" id="yourlastname">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="youremail">Email<span>(digite um email valido)</span></label>
+            <input type="email" id="youremail" required>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+          <div class="line"></div>
+          <div class="input-wrapper">
+            <label for="selection-tutor">Selecione quem foi o seu mentor</label>
+            <select id="selection-tutor">
+              <option value="jorge">Jorge</option>
+              <option value="marcos">Marcos</option>
+              <option value="Bruno">Bruno</option>
+            </select>
+        </div> 
+        <div class="input-wrapper">
+          <label for="your-feedback">Feedback sobre o mentor</label>
+          <input  class="feedback" type="text" id="your-feedback" >
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="your-check" >
+          <label for="your-check">Feedback sobre o mentor</label>
+          
+        </div>
+      </fieldset>
+    </form>
+    <footer></footer>
+  </div>
+</body>
+</html>
