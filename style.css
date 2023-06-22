@@ -62,8 +62,7 @@ header h2{
 }
 form{
   background: #FFFFFF;
-  height: 1075px;
-  border-radius: 0px 0px 20px 20px;
+  height: 1000px;
   padding: 64px;
   display: flex;
   flex-direction: column;
@@ -89,17 +88,30 @@ label span{
 label span:hover{
   color: #84818b;
 }
-input{
+input , textarea {
   background: #FAFAFC;
   border-radius: 8px;
   border:1px solid #E6E6F0;
   width: 100%;
   height: 55px;
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+.fieldset-wrapper input{
+  padding: 0 20px;
 }
 .completename{
   display: flex;
   gap:22px;
   margin-bottom: 15px;
+}
+.completename > div:nth-child(1){
+  width: 100%;
+}
+.completename > div:nth-child(2){
+  width:100%;
 }
 legend{
   text-align: center;
@@ -126,9 +138,12 @@ select{
   background-position:right 28px top 50%;
 }
 .input-wrapper select{
-  appearance:none;}
-.feedback{
+  appearance:none;
+  padding: 0 20px;
+}
+textarea{
   height:167px;
+  padding: 5px 20px;
 }
 .checkbox-wrapper{
   position:relative;
@@ -160,4 +175,38 @@ select{
 }
 .checkbox-wrapper input:focus + label::before{
   outline:2px solid black;
+}
+.col-3{
+  display: flex;
+  gap:10px;
+}
+.col-3 > div:nth-child(1){
+  width:100%;
+  margin-right:22px;
+}
+footer{
+  height: 180px;
+  background: #FFFFFF;
+  border-radius: 0 0 20px 20px;
+  displAY:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+button{
+  height:51px;
+  width: 622px;
+  border-radius: 8px;
+  border: none;
+  background:  #F67669;
+
+  font-family: 'Staatliches';
+  font-size: 20px;
+  line-height: 26px;
+  color:#ffffff;
+}
+button:hover{
+  background:  #c53828;
+}
+input:invalid{
+  border: 1px solid #ff1010;
 }
